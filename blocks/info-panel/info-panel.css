@@ -1,0 +1,40 @@
+.info-panel {
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.info-panel-heading h3 {
+  color: var(--gss-primary);
+  font-size: var(--heading-font-size-m);
+  margin: 0 0 12px;
+}
+
+.info-panel-body p {
+  font-size: var(--body-font-size-s);
+  margin: 0 0 8px;
+  color: var(--dark-color);
+}
+
+.info-panel-cta {
+  margin-top: 8px;
+}
+
+.info-panel-cta .button-wrapper {
+  margin: 0;
+}
+
+.info-panel-cta a.button.primary:any-link {
+  border-color: var(--gss-primary);
+  background-color: var(--gss-primary);
+  color: #fff;
+  font-size: var(--body-font-size-xs);
+  padding: 0.5em 1.2em;
+}
+
+.info-panel-cta a.button.primary:hover {
+  border-color: var(--gss-accent);
+  background-color: var(--gss-accent);
+}

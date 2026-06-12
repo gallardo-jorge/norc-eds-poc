@@ -1,0 +1,76 @@
+.announcements-list {
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.announcements-list-heading {
+  color: var(--gss-primary);
+  font-size: var(--heading-font-size-m);
+  margin: 0 0 4px;
+}
+
+.announcements-list-separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0 16px;
+}
+
+.announcements-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcements-list-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.announcements-list-item:last-child {
+  border-bottom: none;
+}
+
+.announcements-list-item .announcement-body {
+  font-size: var(--body-font-size-s);
+  color: var(--dark-color);
+  margin: 0 0 6px;
+}
+
+.announcements-list-item .announcement-meta {
+  font-size: var(--body-font-size-xs);
+  color: var(--dark-color);
+}
+
+.announcements-list-item .announcement-read-more:any-link {
+  color: var(--gss-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.announcements-list-item .announcement-read-more:hover {
+  text-decoration: underline;
+}
+
+.announcements-list-item .announcement-date {
+  color: #888;
+}
+
+.announcements-list-cta {
+  margin-top: 16px;
+}
+
+.announcements-list-cta a.button.primary:any-link {
+  border-color: var(--gss-primary);
+  background-color: var(--gss-primary);
+  color: #fff;
+  font-size: var(--body-font-size-xs);
+  padding: 0.5em 1.2em;
+}
+
+.announcements-list-cta a.button.primary:hover {
+  border-color: var(--gss-accent);
+  background-color: var(--gss-accent);
+}

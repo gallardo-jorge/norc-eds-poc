@@ -151,6 +151,20 @@ export default async function decorate(block) {
     });
   }
 
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools && !navTools.querySelector('.nav-search')) {
+    const search = document.createElement('div');
+    search.className = 'nav-search';
+    search.innerHTML = `<form action="/search.html" method="get" class="nav-search-form">
+      <input type="text" name="searchTerm" placeholder="Search..." aria-label="Search" />
+      <button type="submit" class="nav-search-button" aria-label="Search">
+        <img src="/icons/search.svg" alt="" width="16" height="16" />
+      </button>
+    </form>`;
+    const toolsWrapper = navTools.querySelector('.default-content-wrapper');
+    (toolsWrapper || navTools).append(search);
+  }
+
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');

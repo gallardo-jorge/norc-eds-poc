@@ -1,0 +1,26 @@
+// Repository-level GitHub Copilot CLI settings.
+// These settings are committed to git and apply to all developers working on this project.
+// They cascade on top of each developer's personal ~/.copilot/settings.json.
+// See: https://docs.github.com/copilot/reference/copilot-cli-reference/cli-config-dir-reference
+{
+  // Register the Adobe Skills marketplace so plugins can be resolved and auto-installed.
+  "extraKnownMarketplaces": {
+    "adobe-skills": {
+      "source": {
+        "source": "github",
+        "repo": "adobe/skills"
+      }
+    }
+  },
+
+  // Declarative plugin auto-install: Copilot CLI will install these plugins automatically
+  // the first time a developer opens this project if they are not already installed.
+  "enabledPlugins": {
+    // EDS development skills: block building, content modeling, site creation, code review, etc.
+    "aem-edge-delivery-services@adobe-skills": true,
+    // Content operations: page auditing, accessibility fixes, GEO/SEO, bulk metadata management.
+    "aem-eds-content-ops@adobe-skills": true,
+    // Project lifecycle: handover docs, authoring guides, developer docs, whitepaper/PDF generation.
+    "aem-project-management@adobe-skills": true
+  }
+}

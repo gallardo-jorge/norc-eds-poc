@@ -1,1 +1,78 @@
 /* add global styles that can be loaded post LCP here */
+
+/* Harmonize lower content modules with feature-card styling language */
+.columns .info-panel,
+.columns .announcements-list,
+.columns .quick-links,
+.columns .news-list {
+	margin-bottom: 24px;
+	padding: 24px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.columns .info-panel h3,
+.columns .announcements-list h3,
+.columns .quick-links h3,
+.columns .news-list h3 {
+	margin: 0 0 12px;
+	color: var(--gss-primary);
+	font-size: var(--heading-font-size-m);
+}
+
+.columns .info-panel p,
+.columns .announcements-list p,
+.columns .quick-links li,
+.columns .news-list p {
+	color: var(--dark-color);
+	font-size: var(--body-font-size-s);
+}
+
+.columns .announcements-list > div,
+.columns .news-list > div {
+	padding: 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.columns .announcements-list > div:last-child,
+.columns .news-list > div:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.columns .quick-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.columns .quick-links li {
+	padding: 5px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.columns .quick-links li ul {
+	padding: 4px 0 0 12px;
+}
+
+.columns .quick-links li ul li {
+	border-bottom: 0;
+	padding: 3px 0;
+}
+
+.columns .quick-links li:last-child {
+	border-bottom: 0;
+}
+
+.columns .announcements-list a:any-link,
+.columns .news-list a:any-link,
+.columns .quick-links a:any-link {
+	color: var(--gss-accent);
+}
+
+.columns .announcements-list a:hover,
+.columns .news-list a:hover,
+.columns .quick-links a:hover {
+	color: var(--gss-accent-hover);
+}

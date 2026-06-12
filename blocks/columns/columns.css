@@ -31,3 +31,31 @@
     order: unset;
   }
 }
+
+/* Sidebar layout: ~67% main column, ~33% sidebar */
+@media (width >= 900px) {
+  .columns.sidebar-layout > div {
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .columns.sidebar-layout > div > div:first-child {
+    flex: 2;
+  }
+
+  .columns.sidebar-layout > div > div:last-child {
+    flex: 1;
+  }
+}
+
+/* Footer columns: equal thirds */
+@media (width >= 900px) {
+  .columns.footer-columns > div {
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .columns.footer-columns > div > div {
+    flex: 1;
+  }
+}
